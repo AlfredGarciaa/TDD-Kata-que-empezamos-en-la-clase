@@ -1,0 +1,15 @@
+Funciionalidades/Historias de Usuarios
+    - Como jugador 
+      =>Quiero poder ver que gané cuando adivine el codigo secreto de
+        Para saber que lo logre y tener el reconocimiento de
+      ***Criterios de confirmacion
+         -Si se adivina el codigo secreto muestra un mensaje "Ganaste!!"
+         -Si no se adivina no muestra nada
+    - Mostrar la pista de vaca(*)
+    - Mostrar la pista de toros(!)
+    - Mostrar la cantidad de intentos restantes
+    - Permitir que se pueda ingresar codigo de 4 digitos
+    - Que el jugador pueda definir la cantidad de digitos del codigo secretos
+    - Que el jugador pueda definir la cantidad de intentos posibles
+    - ...
+    - ...
