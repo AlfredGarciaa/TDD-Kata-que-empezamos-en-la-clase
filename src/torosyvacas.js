@@ -6,23 +6,19 @@ class TorosYVacas
   }
   adivinar(intento)
   {
+    let respuesta = "";
     if(intento == this.codigoSecreto)
     {
       return "Ganaste!";
     } 
-    else if
-    (
-        this.codigoSecreto.includes(intento[0]) &&
-        this.codigoSecreto.includes(intento[1])
-    )    
+    for(var i=0; i<this.codigoSecreto.length; i++)
     {
-        return "**";
-    }
-    else if(this.codigoSecreto.includes(intento[0]))
-    {
-        return "*";
-    }
-    return "";
+        if(this.codigoSecreto.includes(intento[i]))
+        {
+            respuesta += "*";
+        }
+    } 
+    return respuesta;
   }
 }
 
