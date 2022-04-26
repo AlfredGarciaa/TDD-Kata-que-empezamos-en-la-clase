@@ -10,12 +10,17 @@ class TorosYVacas
     {
       return "Ganaste!";
     } 
-    else
+    else if
+    (
+        this.codigoSecreto.includes(intento[0]) &&
+        this.codigoSecreto.includes(intento[1])
+    )    
     {
-        if(this.codigoSecreto.search(intento[0]) > -1)
-        {
-            return "*";
-        }
+        return "**";
+    }
+    else if(this.codigoSecreto.includes(intento[0]))
+    {
+        return "*";
     }
     return "";
   }
