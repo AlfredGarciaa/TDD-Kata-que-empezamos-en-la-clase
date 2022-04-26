@@ -4,12 +4,24 @@ const form = document.querySelector("#codigosecreto-form");
 const codigosecretoInput = document.querySelector("#codigosecreto");
 const div = document.querySelector("#resultado-div");
 
+const adivinarForm = document.querySelector("#adivinar-form");
+const adivinarInput = document.querySelector("#adivinar");
+
+let torosYVacas = "";
+
 form.addEventListener("submit", (event) => 
 {
   event.preventDefault();
 
   const codigosecreto = codigosecretoInput.value;
-  const torosyvacas = new TorosYVacas(codigosecreto);
+  torosYVacas = new TorosYVacas(codigosecreto);
+});
 
-  div.innerHTML = "<p>" + codigosecreto + "</p>";
+adivinarForm.addEventListener("submit", (event) => 
+{
+  event.preventDefault();
+
+  const intento = adivinarInput.value;
+
+  div.innerHTML = "<p>" + torosYVacas.adivinar(intento) + "</p>";
 });
