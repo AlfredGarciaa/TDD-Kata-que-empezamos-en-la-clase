@@ -28,4 +28,10 @@ describe("Toros y Vacas -> Pista de vacas", () =>
     const torosyvacas = new TorosYVacas("12");
     expect(torosyvacas.adivinar("21")).toEqual("**");
   });
+
+  it("Si ingresamos como codigo 124 y muestro intento es 421 deberia retornar '***'", () => 
+  {
+    const torosyvacas = new TorosYVacas("124");
+    expect(torosyvacas.adivinar("421")).toEqual("***");
+  });
 });
